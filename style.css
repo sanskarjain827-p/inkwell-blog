@@ -1,0 +1,25 @@
+:root { --ink:#1c1917; --muted:#78716c; --line:#e7e5e4; --bg:#fffdf8; --accent:#9a3412; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+header { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; padding:16px 20px; border-bottom:1px solid var(--line); }
+.logo { font-family:'Source Serif 4',Georgia,serif; font-weight:700; font-size:24px; color:var(--ink); text-decoration:none; }
+nav { display:flex; gap:16px; align-items:center; } nav a { color:var(--ink); } #who { color:var(--muted); font-size:14px; }
+main { max-width:720px; margin:28px auto; padding:0 16px; }
+h1, h2, .post-body { font-family:'Source Serif 4',Georgia,serif; }
+h1 { font-size:34px; line-height:1.15; margin:0 0 8px; }
+.post { padding:18px 0; border-bottom:1px solid var(--line); }
+.post h2 { margin:0 0 6px; font-size:24px; } .post h2 a { color:var(--ink); text-decoration:none; } .post h2 a:hover { color:var(--accent); }
+.post p { margin:0 0 8px; color:#44403c; }
+.meta { color:var(--muted); font-size:13px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.tag { color:var(--accent); text-decoration:none; font-size:13px; }
+.post-body { font-size:19px; line-height:1.7; white-space:pre-wrap; margin:24px 0; }
+input, textarea, button { font:inherit; padding:10px 12px; border:1px solid var(--line); border-radius:8px; background:#fff; width:100%; }
+textarea { resize:vertical; }
+button { background:var(--ink); color:#fff; border:none; cursor:pointer; width:auto; }
+button.link { background:none; color:var(--accent); padding:0; font-size:13px; }
+form.stack { display:flex; flex-direction:column; gap:10px; }
+.narrow { max-width:400px; margin:0 auto; }
+.comments { border-top:1px solid var(--line); padding-top:16px; }
+.comment { padding:10px 0; border-bottom:1px dashed var(--line); } .comment p { margin:4px 0 0; white-space:pre-wrap; }
+.error { color:#b91c1c; min-height:1em; margin:0; } .muted { color:var(--muted); }
+.filter { margin-bottom:8px; font-size:14px; }
